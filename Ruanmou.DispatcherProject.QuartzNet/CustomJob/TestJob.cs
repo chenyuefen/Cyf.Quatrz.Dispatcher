@@ -21,6 +21,7 @@ namespace Ruanmou.DispatcherProject.QuartzNet.CustomJob
             await Task.Run(() =>
             {
                 Console.WriteLine();
+                //JobDetail接收参数
                 Console.WriteLine("*****************************");
                 {
                     JobDataMap dataMap = context.JobDetail.JobDataMap;
@@ -32,6 +33,7 @@ namespace Ruanmou.DispatcherProject.QuartzNet.CustomJob
                 Console.WriteLine($"This is {Thread.CurrentThread.ManagedThreadId} {DateTime.Now}");
                 //可以换成去数据库查询，可以做啥啥啥
                 //但是很多情况下，我们也是需要参数的
+                //Trigger接收参数
                 {
                     JobDataMap dataMap = context.Trigger.JobDataMap;
                     Console.WriteLine(dataMap.Get("student4"));
@@ -39,6 +41,7 @@ namespace Ruanmou.DispatcherProject.QuartzNet.CustomJob
                     Console.WriteLine(dataMap.Get("student6"));
                     Console.WriteLine(dataMap.GetInt("Year"));
                 }
+                //两者合并接收参数/一样的key后面会被覆盖
                 {
                     Console.WriteLine("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&");
                     JobDataMap dataMap = context.MergedJobDataMap;

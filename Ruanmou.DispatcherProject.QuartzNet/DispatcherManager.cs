@@ -99,6 +99,7 @@ namespace Ruanmou.DispatcherProject.QuartzNet
             //        .WithDescription("This is TestJob")
             //        .Build();
 
+            //    //jobDetail传参
             //    jobDetail.JobDataMap.Add("student1", "Milor");
             //    jobDetail.JobDataMap.Add("student2", "心如迷醉");
             //    jobDetail.JobDataMap.Add("student3", "宇洋");
@@ -123,7 +124,7 @@ namespace Ruanmou.DispatcherProject.QuartzNet
             //                                                    //"10,20,30,40,50,0 * * * * ?"
             //                 .WithDescription("This is testjob's Trigger")
             //                 .Build();
-
+            //    //时间策略传参
             //    trigger.JobDataMap.Add("student4", "Ray");
             //    trigger.JobDataMap.Add("student5", "心欲无痕");
             //    trigger.JobDataMap.Add("student6", "风在飘动");
