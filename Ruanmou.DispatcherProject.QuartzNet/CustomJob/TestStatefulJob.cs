@@ -11,8 +11,8 @@ namespace Ruanmou.DispatcherProject.QuartzNet.CustomJob
     /// <summary>
     /// 有状态的job：上一次执行的结果，能影响到下一次
     /// </summary>
-    [PersistJobDataAfterExecution]//执行后保留数据,更新JobDataMap
-    [DisallowConcurrentExecution]//拒绝同一时间重复执行，同一任务串行
+    [PersistJobDataAfterExecution]//特性：执行后保留数据,更新JobDataMap
+    [DisallowConcurrentExecution]//特性：拒绝同一时间重复执行，同一任务串行
     //但是并没有完成数据的更新？！！ 留给大家解决下。。
     public class TestStatefulJob : IJob//IStatefulJob
     {
