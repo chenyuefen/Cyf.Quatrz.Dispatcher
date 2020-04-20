@@ -99,6 +99,7 @@ namespace Ruanmou.DispatcherProject.QuartzNet
             //        .WithDescription("This is TestJob")
             //        .Build();
 
+            //    //传参数
             //    jobDetail.JobDataMap.Add("student1", "Milor");
             //    jobDetail.JobDataMap.Add("student2", "心如迷醉");
             //    jobDetail.JobDataMap.Add("student3", "宇洋");

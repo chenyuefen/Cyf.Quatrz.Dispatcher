@@ -24,6 +24,7 @@ namespace Ruanmou.DispatcherProject.QuartzNet.CustomJob
                 Console.WriteLine("*****************************");
                 {
                     JobDataMap dataMap = context.JobDetail.JobDataMap;
+                    //取参数
                     Console.WriteLine(dataMap.Get("student1"));
                     Console.WriteLine(dataMap.Get("student2"));
                     Console.WriteLine(dataMap.Get("student3"));
