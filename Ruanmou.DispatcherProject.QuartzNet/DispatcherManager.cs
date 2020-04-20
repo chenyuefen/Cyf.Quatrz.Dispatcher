@@ -120,7 +120,7 @@ namespace Ruanmou.DispatcherProject.QuartzNet
             //                  .WithIdentity("testtrigger1", "group1")
             //                  .StartAt(new DateTimeOffset(DateTime.Now.AddSeconds(10)))
             //                 //.StartNow()//StartAt
-            //                 .WithCronSchedule("5/10 * * * * ?")//每隔一分钟
+            //                 .WithCronSchedule("5/10 * * * * ?")//每隔一分钟，灵活定时时间规则
             //                                                    //"10,20,30,40,50,0 * * * * ?"
             //                 .WithDescription("This is testjob's Trigger")
             //                 .Build();
