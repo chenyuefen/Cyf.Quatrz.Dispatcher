@@ -107,11 +107,11 @@ namespace Ruanmou.DispatcherProject.QuartzNet
 
             //ITrigger trigger = TriggerBuilder.Create()
             //       .WithIdentity("trigger1", "group1")
-            //       .StartNow()
+            //       .StartNow()//设置开始时间
             //       .WithSimpleSchedule(x => x
-            //           .WithIntervalInSeconds(10)
-            //           .WithRepeatCount(10)
-            //           .RepeatForever())
+            //           .WithIntervalInSeconds(10)//设置间隔
+            //           .WithRepeatCount(10)//设置只循环多少次
+            //           .RepeatForever())//设置永久循环
             //           .WithDescription("This is testjob's Trigger")
             //       .Build();
 
