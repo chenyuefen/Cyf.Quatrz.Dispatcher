@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Ruanmou.DispatcherProject.QuartzNet.CustomLog
 {
+    /// <summary>
+    /// 自定义框架日志
+    /// </summary>
     public class CustomConsoleLogProvider : ILogProvider
     {
         public Logger GetLogger(string name)

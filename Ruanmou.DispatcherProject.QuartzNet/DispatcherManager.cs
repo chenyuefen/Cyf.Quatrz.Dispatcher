@@ -64,7 +64,7 @@ namespace Ruanmou.DispatcherProject.QuartzNet
         public async static Task Init()
         {
             #region 自定义框架日志
-            LogProvider.SetCurrentLogProvider(new CustomConsoleLogProvider());
+            LogProvider.SetCurrentLogProvider(new CustomConsoleLogProvider());//自定义框架日志注册
             #endregion
 
             #region scheduler
