@@ -134,20 +134,20 @@ namespace Ruanmou.DispatcherProject.QuartzNet
             //    Console.WriteLine("scheduler作业添加完成1......");
             //}
             //{
-            //    IJobDetail jobDetail = JobBuilder.Create<GoodJob>()
-            //      .WithIdentity("GoodJob", "软谋教育高级班")         //Group 必须跟Trigger的group一致
-            //      .WithDescription("This is 软谋教育高级班的GoodJob")
-            //      .Build();
+            IJobDetail jobDetail = JobBuilder.Create<GoodJob>()
+              .WithIdentity("GoodJob", "软谋教育高级班")         //Group 必须跟Trigger的group一致
+              .WithDescription("This is 软谋教育高级班的GoodJob")
+              .Build();
 
-                ITrigger trigger = TriggerBuilder.Create()
-                              .WithIdentity("GoodJobTrigger1", "软谋教育高级班")//Group 必须跟jobDetail的group一致
-                              .StartAt(new DateTimeOffset(DateTime.Now.AddSeconds(10)))
-                             .WithCronSchedule("3/20 * * * * ?")
-                             .WithDescription("This is GoodJob's Trigger")
-                             .Build();
+            ITrigger trigger = TriggerBuilder.Create()
+                          .WithIdentity("GoodJobTrigger1", "软谋教育高级班")//Group 必须跟jobDetail的group一致
+                          .StartAt(new DateTimeOffset(DateTime.Now.AddSeconds(10)))
+                          .WithCronSchedule("3/20 * * * * ?")
+                          .WithDescription("This is GoodJob's Trigger")
+                          .Build();
 
-            //    await scheduler.ScheduleJob(jobDetail, trigger);
-            //    Console.WriteLine("scheduler作业添加完成2......");
+            await scheduler.ScheduleJob(jobDetail, trigger);
+            Console.WriteLine("scheduler作业添加完成2......");
             //}
         }
     }

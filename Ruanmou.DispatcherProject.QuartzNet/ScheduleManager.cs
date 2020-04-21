@@ -23,7 +23,7 @@ namespace Ruanmou.DispatcherProject.QuartzNet
 
             // 远程输出配置
             properties["quartz.scheduler.exporter.type"] = "Quartz.Simpl.RemotingSchedulerExporter, Quartz";
-            properties["quartz.scheduler.exporter.port"] = "8008";
+            properties["quartz.scheduler.exporter.port"] = "9099";
             properties["quartz.scheduler.exporter.bindName"] = "QuartzScheduler";
             properties["quartz.scheduler.exporter.channelType"] = "tcp";
 
