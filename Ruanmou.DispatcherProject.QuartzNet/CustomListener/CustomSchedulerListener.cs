@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace Ruanmou.DispatcherProject.QuartzNet.CustomListener
 {
+    /// <summary>
+    /// Scheduler监听
+    /// </summary>
     public class CustomSchedulerListener : ISchedulerListener
     {
         public async Task JobAdded(IJobDetail jobDetail, CancellationToken cancellationToken = default(CancellationToken))

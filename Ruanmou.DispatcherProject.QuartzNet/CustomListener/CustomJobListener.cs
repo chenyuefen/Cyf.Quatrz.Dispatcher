@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace Ruanmou.DispatcherProject.QuartzNet.CustomListener
 {
+    /// <summary>
+    /// Job监听
+    /// </summary>
     public class CustomJobListener : IJobListener
     {
         public string Name => "CustomJobListener";

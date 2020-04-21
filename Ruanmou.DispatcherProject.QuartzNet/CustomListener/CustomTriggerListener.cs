@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace Ruanmou.DispatcherProject.QuartzNet.CustomListener
 {
+    /// <summary>
+    /// Trigger监听
+    /// </summary>
     public class CustomTriggerListener : ITriggerListener
     {
         public string Name => "CustomTriggerListener";

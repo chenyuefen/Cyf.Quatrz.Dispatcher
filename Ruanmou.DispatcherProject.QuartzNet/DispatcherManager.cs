@@ -79,7 +79,7 @@ namespace Ruanmou.DispatcherProject.QuartzNet
                 await processor.ProcessFileAndScheduleJobs("~/CfgFiles/quartz_jobs.xml", scheduler);
             }
 
-
+            //Listener框架监听各个环节
             scheduler.ListenerManager.AddSchedulerListener(new CustomSchedulerListener());
             scheduler.ListenerManager.AddTriggerListener(new CustomTriggerListener());
             scheduler.ListenerManager.AddJobListener(new CustomJobListener());
