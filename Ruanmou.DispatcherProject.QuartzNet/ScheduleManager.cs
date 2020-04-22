@@ -11,6 +11,10 @@ namespace Ruanmou.DispatcherProject.QuartzNet
 {
     public class ScheduleManager
     {
+        /// <summary>
+        /// 可视化管理配置
+        /// </summary>
+        /// <returns></returns>
         public async static Task<IScheduler> BuildScheduler()
         {
             var properties = new NameValueCollection();
