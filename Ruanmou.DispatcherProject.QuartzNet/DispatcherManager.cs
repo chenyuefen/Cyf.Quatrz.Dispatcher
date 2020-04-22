@@ -74,7 +74,7 @@ namespace Ruanmou.DispatcherProject.QuartzNet
             IScheduler scheduler = await ScheduleManager.BuildScheduler();
 
             {
-                //使用配置文件
+                //通过配置文件
                 XMLSchedulingDataProcessor processor = new XMLSchedulingDataProcessor(new SimpleTypeLoadHelper());
                 await processor.ProcessFileAndScheduleJobs("~/CfgFiles/quartz_jobs.xml", scheduler);
             }
